@@ -36,4 +36,5 @@ public class AddFractionsTest {
         assertEquals(3, sum.getNumerator());
         assertEquals(5, sum.getDenominator());
     }
+
 }
