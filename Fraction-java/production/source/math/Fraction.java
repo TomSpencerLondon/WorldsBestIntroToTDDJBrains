@@ -21,14 +21,6 @@ public class Fraction {
         return numerator;
     }
 
-    public int getNumerator() {
-        return numerator;
-    }
-
-    public int getDenominator() {
-        return denominator;
-    }
-
     @Override
     public boolean equals(Object other) {
         if (other instanceof Fraction){
