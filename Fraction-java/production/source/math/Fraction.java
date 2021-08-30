@@ -44,4 +44,9 @@ public class Fraction {
     public Fraction minus(Fraction that) {
         return new Fraction(this.numerator * that.denominator - that.numerator * this.denominator, this.denominator * that.denominator);
     }
+
+    public Fraction times(Fraction that) {
+        return new Fraction(this.numerator * that.numerator, this.denominator * that.denominator);
+
+    }
 }
