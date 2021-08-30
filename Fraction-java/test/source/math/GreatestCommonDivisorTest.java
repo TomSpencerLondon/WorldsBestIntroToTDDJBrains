@@ -3,6 +3,7 @@ package source.math;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static source.math.NumberTheory.gcd;
 
 public class GreatestCommonDivisorTest {
     @Test
@@ -36,15 +37,8 @@ public class GreatestCommonDivisorTest {
         // I'm not sure whether I like this behaviour.
         // I probably prefer that GCD be positive at all times
         assertEquals(4, gcd(-24, 28));
+        assertEquals(4, gcd(24, -28));
 
     }
 
-    private int gcd(int a, int b) {
-        while (b != 0){
-            int t = b;
-            b = a % t;
-            a = t;
-        }
-        return Math.abs(a);
-    }
 }
