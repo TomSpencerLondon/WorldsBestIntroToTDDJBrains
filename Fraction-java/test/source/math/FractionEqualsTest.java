@@ -30,4 +30,10 @@ public class FractionEqualsTest {
     public void wholeNumberNotEqualToDifferentWholeNumber() {
         assertNotEquals(new Fraction(6), new Fraction(5));
     }
+
+    @Test
+    public void negativeDenominator() {
+        assertEquals(new Fraction(1, 2), new Fraction(-1, -2));
+        assertEquals(new Fraction(1, -2), new Fraction(-1, 2));
+    }
 }
