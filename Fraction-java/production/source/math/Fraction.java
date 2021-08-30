@@ -9,7 +9,7 @@ public class Fraction {
     }
 
     public Fraction(int numerator, int denominator) {
-        final int gcd = 1;
+        final int gcd = NumberTheory.gcd(numerator, denominator);
         this.numerator = numerator / gcd;
         this.denominator = denominator / gcd;
     }
