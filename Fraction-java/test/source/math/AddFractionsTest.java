@@ -44,4 +44,14 @@ public class AddFractionsTest {
     public void reduceResultToWholeNumber() {
         assertEquals(new Fraction(1), new Fraction(1, 3).plus(new Fraction(2, 3)));
     }
+
+    @Test
+    public void oneDenominatorIsMultipleOfTheOther() {
+        assertEquals(new Fraction(11, 8), new Fraction(3, 4).plus(new Fraction(5, 8)));
+    }
+
+    @Test
+    public void commonFactorInDenominators() {
+        assertEquals(new Fraction(11, 18), new Fraction(1, 6).plus(new Fraction(4, 9)));
+    }
 }
