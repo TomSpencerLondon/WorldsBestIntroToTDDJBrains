@@ -49,4 +49,8 @@ public class Fraction {
         return new Fraction(this.numerator * that.numerator, this.denominator * that.denominator);
 
     }
+
+    public Fraction divideBy(Fraction that) {
+        return new Fraction(this.numerator * that.denominator, this.denominator * that.numerator);
+    }
 }
